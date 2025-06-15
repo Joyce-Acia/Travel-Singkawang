@@ -11,4 +11,5 @@ html {
     background-color: var(--secondary-color);
     font-family: Arial, sans-serif;
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
