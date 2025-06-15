@@ -1,8 +1,14 @@
 :root {
     --primary-color: #008DDA;
-    --secondary-color: #2ecc71;
+    --secondary-color: #d6d7d2;
     --background-color: #f4f4f4;
     --text-color: #003D5B;
-    --border-color: hsl(0, 0%, 80%, 60%);
-    --font-family: 'Poppins', sans-serif;
+    --desc-color: hsl(0, 0%, 80%, 60%);
+}
+
+
+html {
+    background-color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
 }

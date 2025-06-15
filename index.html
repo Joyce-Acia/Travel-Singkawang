@@ -2,26 +2,201 @@
 <html lang="en">
 
 <head>
-    <title>Travel Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TravelKuy</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 
 <body>
     <header>
-        <!-- logo / bagian teratas -->
-         <div class="logo-company">
-        </div>
+        <nav class="navbar">
+            <div class="container">
+
+            <a href="#" class="fav" target="_self">My Favorite Things</a>
+            <div class="navlink">
         <!-- for navigation-->
-         <nav>
+        
             <a href="#">Home</a>
             <a href="#explore">Explore</a>
             <a href="#testimonials">Testimonial</a>
+
+             <div class="navicon">
+                <button id="menu" class="menu">☰</button>
+            </div>
          </nav>
     </header>
 
     <main>
-        
+         <section class= "help" id="me">
+            <div id="left">
+                <img src="./singkawang_asset/Singkawang Paclage.jpeg" alt="Singkawang" >
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h1>Top Values For You</h1>
+                <p>Try variety of benefits when using out services</p>
+            </div>
+        </section>
+
+        <section id="4 elements">
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <p>Car Rental</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-wallet"></i>
+                <p>Bookings</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-user-group"></i>
+                <p>Tour Guides</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tags"></i>
+                <p>Deals</p>
+            </div>
+        </section>
+<!-- destination -->
+        <section>
+            <div>
+                <h1>Popular Destination</h1>
+                <p>Explore more Destination for you</p>
+            </div>
+<!-- 3x1 grid for Destinations -->
+            <div class="grid">
+                <div>
+                    <img src="./singkawang_asset/Singkawang Vihara.jpg" alt="Sui Khew Thai">
+                        <div>
+                            <h2>Sui Khew Thai</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9/5</p>
+                        </div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Pajintan, Singkawang</p>
+                    <p>Rp. 100.000/person</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Singkawang Bukit Bougenville.webp" alt="Bukit Bougenville">
+                    <div>
+                        <h2>Bukit Bougenville</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.3/5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 100.000/person</p>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Singkawang Tanjung Bajau.webp" alt="Tanjung Bajau">
+                    <div>
+                        <h2>Tanjung Bajau</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 860.000/person</p>
+            </div>
+
+<!-- hotels -->
+        </section>
+               <section>
+            <div>
+                <h1>Popular Hotels</h1>
+                <p>Explore more Hotels for you</p>
+            </div>
+<!-- 3x1 frid for hotels -->
+            <div class="grid">
+                <div>
+                    <img src="./singkawang_asset/Hotel Mahkota.jpg" alt="Sui Khew Thai">
+                        <div>
+                            <h2>Mahkota</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9/5</p>
+                        </div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Pajintan, Singkawang</p>
+                    <p>Rp. 100.000/person</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Swiss Bellin Singkawang.jpeg" alt="Bukit Bougenville">
+                    <div>
+                        <h2>Swiss Bellin</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.3/5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 100.000/person</p>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Hotel Horizon Singkawang.jpg" alt="Tanjung Bajau">
+                    <div>
+                        <h2>Horizon</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 860.000/person</p>
+            </div>
+
+        </section>
+<!-- restaurants -->
+               <section>
+            <div>
+                <h1>Popular Restaurant</h1>
+                <p>Explore more Restaurants for you</p>
+            </div>
+<!-- 3x1 grid for restaurants -->
+            <div class="grid">
+                <div>
+                    <img src="./singkawang_asset/Singkawang Dangau.jpg" alt="Sui Khew Thai">
+                        <div>
+                            <h2>Dangau Resort</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.9/5</p>
+                        </div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Pajintan, Singkawang</p>
+                    <p>Rp. 100.000/person</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Warung Laut Singkawang.jpeg" alt="Bukit Bougenville">
+                    <div>
+                        <h2>Warung Laut</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.3/5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 100.000/person</p>
+            </div>
+
+            <div>
+                <img src="./singkawang_asset/Bakso 91 Singkawang.jpeg" alt="Tanjung Bajau">
+                    <div>
+                        <h2>Bakso 91</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <p>4.5</p>
+                    </div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Pajintan, Singkawang</p>
+                <p>Rp. 860.000/person</p>
+            </div>
+        </section>
     </main>
 </body>
