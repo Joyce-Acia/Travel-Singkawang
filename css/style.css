@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: var(--text-color);
     scroll-behavior: smooth;
     box-sizing: border-box;
