@@ -4,15 +4,14 @@
     --background-color: #f4f4f4;
     --text-color: #003D5B;
     --desc-color: hsl(0, 0%, 80%, 60%);
+    --highlight-color: #FF5E5E;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-
-
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito sans', sans-serif;
     color: var(--text-color);
     scroll-behavior: smooth;
-    text-decoration: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -20,50 +19,223 @@
 
 body {
     background-color: var(--secondary-color);
+    line-height: 1.6;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;
+    padding: 1rem 5%;
     background-color: var(--primary-color);
-    border-bottom: 1px solid #fefefe;
+    border-bottom: 1px solid var(--secondary-color);
     position: fixed;
-    
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
 }
 
-.navbar-logo {
+.navbar-logo a {
     font-size: 2rem;
-    font-weight: 700;
-    color: black;
+    font-weight: bolder;
+    color: var(--text-color);
     font-style: italic;
-    
+    text-decoration: none;
 }
 
-.navlink a{
-    color: white;
-    display: inline-block;
-    font-size: 1.3rem;
+.navicon a {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
     margin: 0 1rem;
+    text-decoration: none;
 }
-
-/* .navicon button {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-} */
 
 .menu {
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: white;
+    color: var(--secondary-color);
     cursor: pointer;
+}
+
+/* Hero */
+main > section:first-child img {
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text-color);
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.title{
+    text-align: left;
+    padding-left: 6%;
+    font-size: 2rem;
+    margin-top: 3rem;
+    color: var(--text-color);
+}
+
+.para{
+    text-align: left;
+    padding-left: 6%;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* 4 Elements Section */
+#four-elements {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fdf1dd;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#four-elements div {
+    width: 25%;
+    padding: 1rem;
+}
+
+#four-elements i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Destination / Hotel / Restaurant Cards */
+.destination-grid,
+.hotels-grid,
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 5% 2rem;
+}
+
+.destination,
+.hotel,
+.restaurant {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.destination img,
+.hotel img,
+.restaurant img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destinations,
+.hotels,
+.restaurants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.destination p,
+.hotel p,
+.restaurant p {
+    padding: 0 1rem 0.5rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.fa-location-dot {
+    color: var(--highlight-color);
+    margin: 0 0.5rem 0 1rem;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: var(--background-color);
+    padding: 2rem 5%;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.testimonial > div {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.testimonial-item i {
+    color: gold;
+}
+
+.testimonial-item p {
+    margin: 0.3rem 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.testimonial h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.testimonial p:last-child {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Button */
+.btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eaeaea;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2rem;
 }
