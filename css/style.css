@@ -116,7 +116,7 @@ section p {
 }
 
 #four-elements i {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
@@ -139,8 +139,24 @@ section p {
     border-radius: 10px;
     box-shadow: var(--shadow);
     overflow: hidden;
-    transition: 0.3s;
+    /* transition: 0.3s; */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+    .destination:hover {
+        transform: scale(1.05);
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .hotel:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .restaurant:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    }
 
 .destination img,
 .hotel img,
