@@ -34,10 +34,14 @@ body {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    aspect-ratio: 16/9 ;
+    aspect-ratio: 16/11 ;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem var(--shadow);
     border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .slider img {
