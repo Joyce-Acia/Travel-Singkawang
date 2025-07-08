@@ -135,6 +135,10 @@ section p {
     margin-bottom: 1.5rem;
 }
 
+.desc {
+    display: flex;
+}
+
 
 
 /* 4 Elements Section */
@@ -184,16 +188,19 @@ section p {
     .destination:hover {
         transform: scale(1.05);
         box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
     }
 
     .hotel:hover {
     transform: scale(1.05);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
     }
 
     .restaurant:hover {
     transform: scale(1.05);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
     }
 
 .destination img,
@@ -223,6 +230,10 @@ section p {
 
 .fa-location-dot {
     color: var(--highlight-color);
+    margin: 0 0.5rem 0 1rem;
+}
+.fa-dollar-sign {
+    color: #005b29;
     margin: 0 0.5rem 0 1rem;
 }
 
