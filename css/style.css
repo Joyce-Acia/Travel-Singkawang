@@ -90,6 +90,38 @@ body {
     text-decoration: none;
 }
 
+/* background img */
+
+.home {
+position: relative;
+    border-radius: 20px;
+    background-image: url('../singkawang_asset/Singkawang Package.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8rem 3rem; /* top-bottom, left-right */
+    color: white;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 7rem 4rem;
+}
+
+.home:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.35); /* dark overlay for text contrast */
+    z-index: 0;
+    padding-top: 10rem;
+}
+
+.home-content {
+position: relative;
+z-index: 1;
+max-width: 600px;
+}
+
 .menu {
     font-size: 1.5rem;
     background: none;
