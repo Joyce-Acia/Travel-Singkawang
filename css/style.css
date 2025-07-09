@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'montserrat', 'lato';
     color: var(--text-color);
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -99,11 +99,11 @@ position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 8rem 3rem; /* top-bottom, left-right */
+    padding: 7rem 5rem; /* top-bottom, left-right */
     color: white;
     overflow: hidden;
     max-width: 1000px;
-    margin: 7rem 4rem;
+    margin: 6.5rem 5rem;
 }
 
 .home:after {
@@ -120,6 +120,37 @@ position: relative;
 position: relative;
 z-index: 1;
 max-width: 600px;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--background-color);
+    text-align: left;
+}
+
+.home p {
+    font-size: 1rem;
+    color: var(--background-color);
+    text-align: left;
+}
+
+.homebtn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.homebtn:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .menu {
