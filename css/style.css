@@ -225,7 +225,19 @@ section p {
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+#four-elements i:hover {
+/* --fa-bounce-land-scale-x: 1.2;
+--fa-bounce-land-scale-y: 0.8;
+--fa-bounce-rebound: 5px;    */
+
+transform: scale(1.2) translateY(-5px);
+color: var(--highlight-color);
+}
+  
+
 
 /* Destination / Hotel / Restaurant Cards */
 .destination-grid,
