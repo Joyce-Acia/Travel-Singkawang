@@ -99,7 +99,7 @@ position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 7rem 5rem; /* top-bottom, left-right */
+    padding: 4rem 5rem; /* top-bottom, left-right */
     color: white;
     overflow: hidden;
     max-width: 1000px;
