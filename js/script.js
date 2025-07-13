@@ -6,6 +6,8 @@ document.querySelector('#menu').onclick = () => {
 };
 
 
+
+
 // Klik diluar sidebar untuk menghilangkan nav
 
 const menu = document.querySelector ('#menu');
